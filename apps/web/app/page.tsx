@@ -1,8 +1,6 @@
 import Image from "next/image";
-import { Card } from "@repo/ui/card";
-import { Code } from "@repo/ui/code";
 import styles from "./page.module.css";
-import { Button } from "@repo/ui/button";
+import { Button, Card, Code } from "@repo/ui";
 
 function Gradient({
   conic,
@@ -29,18 +27,18 @@ function Gradient({
 
 const LINKS = [
   {
-    title: "Docs",
-    href: "https://turbo.build/repo/docs",
+    title: "web",
+    href: "https://turbo.build/repo/web",
     description: "Find in-depth information about Turborepo features and API.",
   },
   {
     title: "Learn",
-    href: "https://turbo.build/repo/docs/handbook",
+    href: "https://turbo.build/repo/web/handbook",
     description: "Learn more about monorepos with our handbook.",
   },
   {
     title: "Templates",
-    href: "https://turbo.build/repo/docs/getting-started/from-example",
+    href: "https://turbo.build/repo/web/getting-started/from-example",
     description: "Choose from over 15 examples and deploy with a single click.",
   },
   {
@@ -87,7 +85,7 @@ export default function Page(): JSX.Element {
           <div className={styles.logos}>
             <div className={styles.circles}>
               <Image
-                alt=""
+                alt="Turborepo"
                 height={614}
                 src="circles.svg"
                 width={614}
@@ -100,7 +98,7 @@ export default function Page(): JSX.Element {
 
             <div className={styles.logo}>
               <Image
-                alt="Turborepo"
+                alt=""
                 height={120}
                 priority
                 src="turborepo.svg"
